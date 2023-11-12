@@ -9,7 +9,6 @@ statsmodels
 pytrends
 plotly
 scikit-learn
-itertools
 hijri_converter
 ta
 prophet
