@@ -1,0 +1,16 @@
+steamlit
+numpy
+pandas
+yfinance
+matplotlib
+seaborn
+datetime 
+statsmodels
+itertools
+pytrends
+plotly
+scikit-learn
+itertools
+hijri_converter
+ta
+prophet
