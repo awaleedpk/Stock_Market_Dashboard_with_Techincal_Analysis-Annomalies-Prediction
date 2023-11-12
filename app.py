@@ -485,7 +485,7 @@ st.plotly_chart(fig)
 # dataset called "data". It then defines RSI thresholds for buy and sell signals.
 
 # Add technical indicators including RSI
-data = add_all_ta_features(data, open="Open", high="High", low="Low", close="Close", volume="Volume")
+data = add_all_ta_features(data, open="Open", high="High", low="Low", close="Close", volume="Volume", fillna=True)
 
 # Define RSI thresholds for buy and sell signals
 rsi_buy_threshold = 30
