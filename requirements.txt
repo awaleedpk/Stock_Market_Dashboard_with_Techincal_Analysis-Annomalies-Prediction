@@ -12,3 +12,4 @@ scikit-learn
 hijri_converter
 ta
 prophet
+investpy
