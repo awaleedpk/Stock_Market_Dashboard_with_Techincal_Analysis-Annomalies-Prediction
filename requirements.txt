@@ -6,7 +6,6 @@ matplotlib
 seaborn
 datetime 
 statsmodels
-itertools
 pytrends
 plotly
 scikit-learn
