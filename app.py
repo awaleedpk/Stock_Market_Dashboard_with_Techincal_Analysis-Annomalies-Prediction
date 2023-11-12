@@ -14,7 +14,6 @@ from datetime import date
 from datetime import timedelta
 from statsmodels.tsa.seasonal import seasonal_decompose
 import statsmodels.api as sm
-import itertools
 import pytrends
 from pytrends.request import TrendReq
 import time
