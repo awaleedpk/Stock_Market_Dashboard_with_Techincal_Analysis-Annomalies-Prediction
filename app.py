@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov  6 22:24:28 2023
-
-@author: Source
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
-from datetime import datetime, timedelta
+from datetime import date, timedelta, datetime
 import yfinance as yf
 import streamlit as st
 from plotly.subplots import make_subplots
@@ -583,10 +576,7 @@ def render_tab6():
     # Call the function to plot Google Trends data in Streamlit
     plot_google_trends_data(ticker_symbol, interest_over_time_df)
 
-from datetime import date, timedelta, datetime
-import yfinance as yf
-import streamlit as st
-import pandas as pd
+
 
 def download_stock_data(ticker):
     # Calculate the date range for the last 2 years
