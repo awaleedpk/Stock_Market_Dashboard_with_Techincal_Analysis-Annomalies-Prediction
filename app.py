@@ -711,14 +711,11 @@ def display_day_of_month_effect(current_day, day_avg):
 
 def calculate_week_number_returns_effect(data):
     # Calculate the week number for each data point
-    data['Week_Number'] = data.index.week
-
+    data['Week_Number'] = data.index.isocalendar().week
     # Calculate weekly averages
-    week_avg = data.groupby(data['Week_Number'])['Percentage_Return'].mean()
-
+    week_avg = data.groupby('Week_Number')['Percentage_Return'].mean()
     # Get the current week number
-    current_week = datetime.today().date().isocalendar()[1]
-
+    current_week = datetime.today().isocalendar()[1]
     return current_week, week_avg
 
 def display_week_number_returns_effect(current_week, week_avg):
